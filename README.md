@@ -1,6 +1,13 @@
 # MathRacer
 
-**TODO: Add description**
+```
+git clone https://github.com/willus10245/math_racer
+cd math_racer
+iex -S mix
+```
+
+This is a simple application that demonstrates some of the basics of interacting with processes in Elixir.
+It has one top level function: `MathRacer.race/1` that takes a number. It then spawns that number of `MathRacer.Adder`s, which perform a complicated mathematical operation (1 + 2), and respond to the `MathRacer.Coordinator` module with the result and how long it to perform. The Coordinator waits for all the results to come in and then calculates the average time it took each process to perform its operation.
 
 ## Installation
 
